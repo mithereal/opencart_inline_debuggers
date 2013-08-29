@@ -1,4 +1,7 @@
-krumo
+Opencart Inline Debuggers 
+Includes KRUMO and KINT
+
+Krumo:
 =====
 
 Krumo Fork (with updates / fixes)
@@ -163,3 +166,16 @@ CONTRIBUTION
 If you download and use and possibly even extend this tool, please let us know. 
 Any feedback, even bad, is always welcome and your suggestions are going to be 
 considered for our next release. [...]
+
+Kint:
+=====
+
+Kint Fork
+see http://raveren.github.io/kint/ for more usage instructions
+
+Virtually no installation and no dependencies.
+<?php
+require '/kint/Kint.class.php';
+Kint::dump( $_SERVER );
+Dump functions accept any number of parameters and have shorthands.
+d( $variable1, $variable2 );

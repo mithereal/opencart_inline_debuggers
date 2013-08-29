@@ -1,0 +1,21 @@
+<modification>
+<id>Kint Support</id>
+<version>1.0</version>
+<vqmver>1.2.3</vqmver>
+<author>Jason Clark (mithereal@gmail.com)</author>
+
+<file name="system/startup.php">
+<operation>
+<search position="after"><![CDATA[
+require_once(DIR_SYSTEM . 'helper/utf8.php'); 
+]]></search>
+<add><![CDATA[
+//krumo
+if (file_exists(DIR_SYSTEM . 'helper/kint/kint.class.php')) {
+	require_once(DIR_SYSTEM . 'helper/kint/kint.class.php');
+}  
+]]></add>
+</operation>
+</file>
+
+</modification>
