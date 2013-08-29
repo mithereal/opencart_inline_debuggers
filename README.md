@@ -1,6 +1,20 @@
 Opencart Inline Debuggers 
 Includes KRUMO and KINT
 
+Kint:
+=====
+
+Kint Fork
+see http://raveren.github.io/kint/ for more usage instructions
+
+Virtually no installation and no dependencies.
+<?php
+require '/kint/Kint.class.php';
+Kint::dump( $_SERVER );
+Dump functions accept any number of parameters and have shorthands.
+d( $variable1, $variable2 );
+
+
 Krumo:
 =====
 
@@ -167,15 +181,23 @@ If you download and use and possibly even extend this tool, please let us know.
 Any feedback, even bad, is always welcome and your suggestions are going to be 
 considered for our next release. [...]
 
-Kint:
+Log.Vkit
 =====
+How to use?
 
-Kint Fork
-see http://raveren.github.io/kint/ for more usage instructions
+Version O
 
-Virtually no installation and no dependencies.
-<?php
-require '/kint/Kint.class.php';
-Kint::dump( $_SERVER );
-Dump functions accept any number of parameters and have shorthands.
-d( $variable1, $variable2 );
+new log($expression, $expression, ...). Writing content to log.log at output directory. Default is D:/output/log/. It's append information of $expression to file log.
+Version T
+
+new logt($expression, $expression, ...). Sample as log except clear content of log file before logging new content. The output is logt.log.
+Version D
+
+new logdie($expression, $expression, ...). Sample to log except program will be died after logging. The output is logdie.log.
+Version TD
+
+new logtdie($expression, $expression, ...). Sample to logt except program will be died after logging. The output is logtdie.log.
+Version Extreme
+
+You can use class log1, log1t, log1die, log1tdie, 2, 3 ...10 as other versions.
+
