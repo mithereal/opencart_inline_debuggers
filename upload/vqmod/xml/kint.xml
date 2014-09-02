@@ -10,12 +10,14 @@
 require_once(DIR_SYSTEM . 'helper/utf8.php'); 
 ]]></search>
 <add><![CDATA[
-//krumo
-if (file_exists(DIR_SYSTEM . 'helper/kint/kint.class.php')) {
-	require_once(DIR_SYSTEM . 'helper/kint/kint.class.php');
+//Kint mod start
+if (file_exists(DIR_SYSTEM . 'helper/kint/Kint.class.php')) {
+	require_once(DIR_SYSTEM . 'helper/kint/Kint.class.php');
 }  
+//Kint mod end
 ]]></add>
 </operation>
 </file>
 
 </modification>
+
