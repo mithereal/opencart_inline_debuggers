@@ -1,7 +1,0 @@
-<?php
-/**
- * @desc constant name
- */
-
-
- 

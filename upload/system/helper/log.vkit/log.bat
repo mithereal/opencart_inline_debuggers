@@ -1,1 +1,0 @@
-finish.bat  "php logtool/index.php"
