@@ -5,7 +5,7 @@ Kint:
 =====
 
 Kint Fork
-see http://raveren.github.io/kint/ for more usage instructions
+see https://github.com/kint-php/kint for more usage instructions
 
 Virtually no installation and no dependencies.
 <?php
