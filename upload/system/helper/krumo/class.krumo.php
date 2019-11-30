@@ -645,7 +645,7 @@ This is a list of all the values from the <code><b><?php echo realpath($ini_file
 	* @static
 	*/
 	Private Static Function _config($group, $name, $fallback=null) {
-		/ not loaded ?
+		// not loaded ?
 		//// commented for opencart use
 		if (empty($_config)) {
 			
